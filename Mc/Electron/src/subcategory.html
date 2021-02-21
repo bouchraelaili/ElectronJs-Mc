@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css.css">
+
+    
+    <link rel="stylesheet" href="css.css">
+    <title>Sub Category</title>
+</head>
+<body onload="loadsub()">
+
+    <div class="navigation">
+
+        <ul>
+          
+                <a href=""> 
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/McDonald%27s_Golden_Arches.svg" alt="Mc" width="120px" style="margin-left: 20px; margin-top: 20px;">
+                </a>
+           
+
+
+            <li>
+                <a href="index.html">
+                    <span class="icon"><i class="fa fa-pie-chart" aria-hidden="true"></i></span>
+                    <span class="title">Category</span>
+                </a>
+
+            </li>
+            <li>
+                <a href="subcategory.html">
+                    <span class="icon"><i class="fa fa-pie-chart" aria-hidden="true"></i></span>
+                    <span class="title">Subcategory</span>
+                </a>
+            
+
+            </li>
+            <li>
+                <a href="product.html">
+                    <span class="icon"><i class="fa fa-pie-chart" aria-hidden="true"></i></span>
+                    <span class="title">Product</span>
+                </a>
+
+            </li>
+            
+        </ul>
+    </div>
+
+
+      <div class="row">
+          <div class="col-md-4 offset-md-5" style="background-color: #fff;margin-top:25px;padding:20px;border-radius:10px;">
+  <h3> List SubCategory</h3>
+  <table class="table table-striped">
+          <thead>
+              <tr>
+                  <th>Name</th>
+                  
+                  <th>Action</th>
+              </tr>
+  
+          </thead>
+          <tbody id="subcatTable">
+              
+          </tbody>
+      </table>
+  </div>
+      
+  </div>
+  <div class="row">
+      <div class="col-md-4 offset-md-5" style="background-color: #fff;margin-top:25px;padding:20px;border-radius:10px;">
+          <h3>Sub Category</h3>
+  
+          <form >
+              <div class="form-group">
+                  <label> Name</label>
+                  <input type="text" class="form-control" name="subcategory" id="subcategory" placeholder="Name" >
+              </div>
+              
+              <div class="form-group">
+                <select class="form-control" name="selectsubcat" id="selectsubcat">
+                </select>
+            </div>
+              
+              <div class="form-group">
+                <button type="submit" onclick="send1()" class="btn btn"style="background-color:#f1c40f;color:#fff;"><i class="fa fa-database"></i>Add</button>
+                
+        
+            </div>
+          </form>
+      </div>
+  
+      
+  </div>
+  
+
+
+
+    <!-- <div id="alladd">
+        <input type="text" name="category" id="category" placeholder="Category Name">
+        <input type="text" name="img" id="img" placeholder="Category image">
+        <button class="btn btn-success" type="submit" onclick="send()" >Submit</button>
+    </div>
+    <table id="tabledes" cellpadding=10;>
+        <thead>
+
+        </thead>
+        <tbody id="catTable">
+            
+        </tbody>
+    </table> -->
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" ></script>
+</body>
+
+</html>

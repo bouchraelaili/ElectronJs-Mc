@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- StyleSheet -->
+  <link rel="stylesheet" href="css/stylesAddToCart.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Shopping Cart Project</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__center container">
+
+
+      <ul class="nav__list">
+     
+        <div class="cart__icon">
+          <h2>cart</h2>
+          <span class="item__total">0</span>
+        </div>
+      </ul>
+
+      <div class="hamburger">
+
+      </div>
+    </div>
+  </nav>
+  <div class="all2">
+    <!-- <nav class="nav">
+      <div class="nav__center container">
+  
+  
+        <ul class="nav__list">
+       
+          <div class="cart__icon">
+            <h2>cart</h2>
+            <span class="item__total">0</span>
+          </div>
+        </ul>
+  
+        <div class="hamburger">
+  
+        </div>
+      </div>
+    </nav> -->
+    <div class="nav shadow rounded" style="background-color:#F6F6F6;">
+      <!-- <img src="images/Title2.PNG" height="150px" style="margin-left: 10%;"/> -->
+      <img src="images/burger1.png" height="150px" style="margin-left: 10%; width: 10%;" />
+      <img src="images/burger2.png" height="150px" style="margin-left: 25%; width: 10%;" />
+      <img src="images/burger3.png" height="180px" style="margin-left: 75%;margin-top: -9%; width: 17%;" />
+
+
+
+    </div>
+    <a href="PayQuestion.html"> <button type="button" class="btn"
+        style="margin-left:90%;margin-top:5%;background-color:#035D00;color: white;width: 70px;">Back</button></a>
+
+
+
+
+  
+    <div class="menu">
+      <ul id="menu-accordeon">
+   
+      </ul>
+      <section class="products">
+        <div class="product__center" style="margin-top: -55%;
+        margin-left: 12%;">
+        
+        </div>
+      </section>
+    
+      <section class="cart__overlay">
+        <div class="cart">
+          <span class="close__cart">
+            <svg>
+              <use xlink:href="./images/sprite.svg#icon-cross"></use>
+            </svg>
+          </span>
+          <h1>Your Cart</h1>
+          <div class="cart__centent">
+          
+          </div>
+    
+          <div class="cart__footer">
+            <h3>Total: DH <span class="cart__total">0</span></h3>
+            <button class="clear__cart btn">Clear Cart</button>
+            <button class=" btn" id="checkout">Next</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+
+
+
+
+
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="js/product.js"></script>
+</body>
+
+</html>

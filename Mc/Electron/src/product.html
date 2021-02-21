@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css.css">
+
+    
+    <link rel="stylesheet" href="css.css">
+    <title>Product</title>
+</head>
+<body onload="loadproducts()">
+
+    <div class="navigation">
+
+        <ul>
+          
+                <a href=""> 
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/McDonald%27s_Golden_Arches.svg" alt="Mc" width="120px" style="margin-left: 20px; margin-top: 20px;">
+                </a>
+           
+
+
+            <li>
+                <a href="index.html">
+                    <span class="icon"><i class="fa fa-pie-chart" aria-hidden="true"></i></span>
+                    <span class="title">Category</span>
+                </a>
+
+            </li>
+            <li>
+                <a href="subcategory.html">
+                    <span class="icon"><i class="fa fa-pie-chart" aria-hidden="true"></i></span>
+                    <span class="title">Subcategory</span>
+                </a>
+
+            </li>
+            <li>
+                <a href="product.html">
+                    <span class="icon"><i class="fa fa-pie-chart" aria-hidden="true"></i></span>
+                    <span class="title">Product</span>
+                </a>
+
+            </li>
+            
+        </ul>
+    </div>
+
+
+      <div class="row">
+          <div class="col-md-6 offset-md-4" style="background-color: #fff;margin-top:25px;padding:20px;border-radius:10px;">
+  <h3> List Product</h3>
+  <table class="table table-striped">
+          <thead>
+              <tr>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>ingrediens</th>
+                  <th>code promo</th>
+                  <th>Action</th>
+              </tr>
+  
+          </thead>
+          <tbody id="productstable">
+              
+          </tbody>
+      </table>
+  </div>
+      
+  </div>
+  <div class="row">
+      <div class="col-md-6 offset-md-4" style="background-color: #fff;margin-top:25px;padding:20px;border-radius:10px;">
+          <h3>Product</h3>
+  
+          <form >
+              <div class="form-group">
+                  <label> Name</label>
+                  <input type="text" class="form-control" id="productname" placeholder="productname" >
+              </div>
+              
+
+              <div class="form-group">
+                <label>Price </label>
+                <input type="text" class="form-control" id="productprice" placeholder="productprice" >
+            </div>
+
+            <div class="form-group">
+                <label>ingrediens </label>
+                <input type="text" class="form-control" id="ingrediens" placeholder="ingrediens" >
+            </div>
+
+            <div class="form-group">
+                <label>code promo </label>
+                <input type="text" class="form-control" id="codepromo" placeholder="codepromo" >
+            </div>
+
+            <div class="form-group">
+                <select class="form-control" name="selectdesubcategory" id="selectdesubcategory">
+                    
+                </select>
+            </div>
+              <div class="form-group">
+                <button type="submit" onclick="sendproduit()" class="btn btn"style="background-color:#f1c40f;color:#fff;"><i class="fa fa-database"></i>Add</button>
+            </div>
+          </form>
+      </div>
+  
+      
+  </div>
+  
+
+
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" ></script>
+</body>
+
+</html>
